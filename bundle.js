@@ -86,18 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./functions.js":
-/*!**********************!*\
-  !*** ./functions.js ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.sum = sum;\n\nfunction sum(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./functions.js?");
-
-/***/ }),
-
 /***/ "./main.js":
 /*!*****************!*\
   !*** ./main.js ***!
@@ -106,7 +94,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _functions = __webpack_require__(/*! ./functions */ \"./functions.js\");\n\nconsole.log((0, _functions.sum)(5, 10));\n\n//# sourceURL=webpack:///./main.js?");
+eval("\n\nvar users = [{\n  nome: 'Diego',\n  idade: 23,\n  empresa: 'Rocketseat'\n}, {\n  nome: 'Gabriel',\n  idade: 15,\n  empresa: 'Rocketseat'\n}, {\n  nome: 'Lucas',\n  idade: 30,\n  empresa: 'Facebook'\n}];\nvar ages = users.map(function (item) {\n  return item.idade;\n}); //console.log(ages);\n\nvar rocketSeatEmployees = users.filter(function (item) {\n  return item.idade > 18 && item.empresa === 'Rocketseat';\n}); //console.log(rocketSeatEmployees);\n\nvar googleEmployee = users.find(function (item) {\n  return item.empresa === 'Google';\n}); //console.log(googleEmployee);\n\nvar agesDoubles = users.map(function (item) {\n  item.idade = item.idade * 2;\n  return item;\n});\nconsole.log(agesDoubles);\nvar filteredAges = a.filter(function (item) {\n  return item.idade < 51;\n});\nconsole.log(filteredAges);\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 
